@@ -37,6 +37,8 @@ from pynput import mouse, keyboard
 import win32clipboard
 import win32con
 from dotenv import load_dotenv
+from rich.console import Console
+from rich.panel import Panel
 
 
 # --- Configuration initialization ---
@@ -254,12 +256,15 @@ def on_key_press(key):
 
 # --- Main function ---
 def main():
-    print("-------------- Special Clipboard for Windows (REV. 2) ---------------")
-    print(f"| DEBUG Level: {DEBUG}                                                    |")
-    print("| Select text (left drag) to capture it into the special clipboard. |")
-    print("| Click the middle mouse button to paste the content.               |")
-    print("| Press Ctrl+C in this console or the End key to exit.              |")
-    print("---------------------------------------------------------------------")
+    console = Console()
+
+    console.print(Panel.fit(
+    f"[bold]DEBUG Level:[/bold] {DEBUG}\n"
+    "Select text (left drag) to capture it into the special clipboard.\n"
+    "Click the middle mouse button to paste the content.\n"
+    "Press Ctrl+C in this console or the End key to exit.",
+    title="Special Clipboard for Windows (REV. 2)",
+    border_style="green"))
 
     mouse_listener = mouse.Listener(on_click=on_click)
     mouse_listener.start()
