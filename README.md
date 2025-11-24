@@ -28,16 +28,16 @@
 ## How to run:
 
 1. Create a virtual environment and activate it:
-    ```python -m venv linuxCb```
-    ```[CMD]: linuxCb\Scripts\activate```
-    ```[PowerShell]: linuxCb\Scripts\Activate.ps1```
+    - ```python -m venv linuxCb```
+    - ```[CMD]: linuxCb\Scripts\activate```
+    - ```[PowerShell]: linuxCb\Scripts\Activate.ps1```
 2. Install packages into the virtual environment:
-    ```pip install pynput pywin32 python-dotenv```
+    - ```pip install pynput pywin32 python-dotenv```
 3. (Optional) Configure settings in `.env` file:
     - Copy `env.example` to `.env` if it doesn't exist
     - Edit `.env` to adjust timing values and debug mode
 4. Run the script:
-    ```python linux-clipboard.py```
+    - ```python linux-clipboard.py```
 
 ## Configuration
 
