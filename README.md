@@ -26,12 +26,13 @@
 - Python 3.8+
 
 ## How to run:
+Just run the ```start.bat``` batch script, or...
 
-1. Create a virtual environment and activate it:
+1. (Optional) Create a virtual environment and activate it:
     - ```python -m venv linuxCb```
     - ```[CMD]: linuxCb\Scripts\activate```
     - ```[PowerShell]: linuxCb\Scripts\Activate.ps1```
-2. Install packages into the virtual environment:
+2. (Optional) Install packages into the virtual environment:
     - ```pip install pynput pywin32 python-dotenv```
 3. (Optional) Configure settings in `.env` file:
     - Copy `env.example` to `.env` if it doesn't exist
@@ -41,7 +42,7 @@
 
 ## Configuration
 
-All runtime tweaks can be set through environment variables (for local development place them in `.env`). Defaults are listed in `env.example`.
+All runtime tweaks can be set through environment variables (for local development place them in `.env`). Defaults are listed in `env.example`. You no need to change/set... it is mostly for debug purposes.
 
 | Variable | Default | Description |
 | --- | --- | --- |
