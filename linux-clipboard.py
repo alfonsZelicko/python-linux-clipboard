@@ -29,6 +29,7 @@ def ensure_dependencies():
 
     subprocess.check_call([sys.executable, "-m", "pip", "install", *missing])
 
+# this script is just internal tool, so this "pattern" is fine - even I dont like it :-) 
 ensure_dependencies()
 
 import time
