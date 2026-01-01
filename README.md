@@ -32,8 +32,8 @@ Just run the ```start.bat``` batch script, or...
     - ```python -m venv linuxCb```
     - ```[CMD]: linuxCb\Scripts\activate```
     - ```[PowerShell]: linuxCb\Scripts\Activate.ps1```
-2. (Optional) Install packages into the virtual environment:
-    - ```pip install pynput pywin32 python-dotenv```
+~~2. (Optional) Install packages into the virtual environment:~~
+    ~~- ```pip install pynput pywin32 python-dotenv rich```~~
 3. (Optional) Configure settings in `.env` file:
     - Copy `env.example` to `.env` if it doesn't exist
     - Edit `.env` to adjust timing values and debug mode
@@ -59,3 +59,6 @@ All runtime tweaks can be set through environment variables (for local developme
 | `MAX_CLICK_DURATION` | `0.15` | Maximum duration (seconds) for a click to count as simple click. Longer presses count as selections. |
 | `DOUBLE_CLICK_MAX_INTERVAL` | `0.35` | Time window for double/triple click detection. |
 | `DEBUG` | `1` | Debug verbosity (0 = off). |
+
+## TODOS:
+ - [ ] add support for text selecting with 'shift'+ arrows/ctrl+shift/... keys
