@@ -33,12 +33,14 @@ Just run the ```start.bat``` batch script, or...
     - ```[CMD]: linuxCb\Scripts\activate```
     - ```[PowerShell]: linuxCb\Scripts\Activate.ps1```
 ~~2. (Optional) Install packages into the virtual environment:~~
-    ~~- ```pip install pynput pywin32 python-dotenv rich```~~
+    ~~- ```pip install -r requirements.txt```~~
 3. (Optional) Configure settings in `.env` file:
     - Copy `env.example` to `.env` if it doesn't exist
     - Edit `.env` to adjust timing values and debug mode
 4. Run the script:
     - ```python linux-clipboard.py```
+  
+> since I did it often - I added internal functionality to install requrements automatically, if missing
 
 ## Configuration
 
@@ -62,3 +64,4 @@ All runtime tweaks can be set through environment variables (for local developme
 
 ## TODOS:
  - [ ] add support for text selecting with 'shift'+ arrows/ctrl+shift/... keys
+ - [ ] add hash of requirements.txt into .requirements-ok file to check, if it has changed and mechanism for proper work with it in autoinstall functioanlity
